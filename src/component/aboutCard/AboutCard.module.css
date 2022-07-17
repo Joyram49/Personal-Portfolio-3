@@ -1,0 +1,26 @@
+.about_card {
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+}
+.about_card img {
+  border-radius: 2rem;
+}
+.about_card h1 {
+  margin: 2rem 0;
+  font-family: var(--font-link);
+  font-weight: 600;
+  font-size: 2rem;
+}
+.about_card p {
+  font-family: var(--font-base);
+  font-size: 1.4rem;
+  text-align: justify;
+}
+/* Media Query - 1366px */
+
+@media screen and (max-width: 1366px) {
+  .about_card {
+    width: 20rem;
+  }
+}

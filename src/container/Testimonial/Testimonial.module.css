@@ -1,0 +1,136 @@
+.testimonial {
+  width: 100%;
+  height: auto;
+  background-color: var(--primary-color);
+  padding: 7rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.testimonial_heading h1 {
+  font-size: 4.5rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+.swiper_container {
+  width: 50%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: 10rem 0;
+}
+.test_content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 6rem 0;
+}
+.test_img {
+  width: 45rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.test_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.test_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.test_info p {
+  font-size: 1.6rem;
+  font-family: var(--font-base);
+  text-align: justify;
+  text-indent: 4rem;
+  margin-bottom: 4rem;
+  line-height: 2.3rem;
+}
+
+.test_person h3 {
+  font-family: var(--font-base);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 2rem;
+}
+.company_icons {
+  width: 60%;
+  height: auto;
+  display: flex;
+  gap: 4rem 6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.company_icons img {
+  width: 20rem;
+  height: 10rem;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+.company_icons img:hover {
+  filter: none;
+}
+
+/* Media Query - 1600px */
+
+@media screen and (max-width: 1600px) {
+  .swiper_container {
+    width: 70%;
+  }
+}
+/* Media Query - 1024px */
+
+@media screen and (max-width: 1366px) {
+  .swiper_container {
+    width: 80%;
+  }
+}
+
+/* Media Query - 768px */
+
+@media screen and (max-width: 768px) {
+  .testimonial_heading h1 {
+    font-size: 3.5rem;
+  }
+  .test_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .test_img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .test_info {
+    align-items: center;
+  }
+  .company_icons {
+    width: 80%;
+    gap: 2rem 3rem;
+  }
+  .company_icons img {
+    width: 15rem;
+    height: 8rem;
+  }
+}
+
+/* Media Query - 600px */
+
+@media screen and (max-width: 600px) {
+  .testimonial_heading h1 {
+    font-size: 3rem;
+  }
+  .swiper_container {
+    width: 90%;
+    margin: 5rem 0;
+  }
+  .test_content {
+    padding: 2rem;
+  }
+}
